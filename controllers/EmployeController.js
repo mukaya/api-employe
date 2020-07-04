@@ -15,8 +15,7 @@ class EmployeController {
     }
     static deleteEmploye(){
         return async(request, response, next) => {
-            const {id} = request.body;
-            await Employe.findByIdAndDelete(id)
+            await Employe.findByIdAndDelete(request.body.id)
             .then(res=>response.json({message:"deleted"}))
             .catch(error=>console.log(error));
         }
