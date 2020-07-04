@@ -4,8 +4,7 @@
   "description": "the server of my application mobile",
   "main": "node server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "author": "Osée Mukaya",
   "license": "ISC",
