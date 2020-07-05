@@ -24,7 +24,7 @@ class EmployeController {
     static updateEmploye(){
         return async (request, response, next) => {
             const {name,email,picture,salary,phone,position,id} = request.body
-            await Employe.findByIdAndUpdate(id,{name,email,picture,salary,phone,position})
+            await Employe.findByIdAndUpdate(id,{name,email,phone,salary,picture,position})
             .then(data=>response.json(data))
             .catch(error=>console.log(error));
         }
